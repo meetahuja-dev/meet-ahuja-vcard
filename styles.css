@@ -1,0 +1,123 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Card styles */
+.card {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    max-width: 600px;
+    width: 90%;
+    height: 90vw;
+    max-height: 1600px;
+}
+
+.profile-image {
+    flex: 0 0 20%;
+    border-right: 1px solid #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.profile-info {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile-info h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.profile-info p {
+    color: #777;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.contact-info a {
+    color: #333;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.save-contact {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        height: auto;
+        max-height: none;
+    }
+
+    .profile-image {
+        flex: 0 0 auto;
+        border-right: none;
+        border-bottom: 1px solid #f0f0f0;
+        padding: 40px;
+    }
+
+    .profile-image img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+
+    .profile-info {
+        padding: 40px;
+    }
+}
+
+.contact-info a {
+    display: flex;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.contact-info i {
+    margin-right: 10px;
+}
+
+.save-contact i {
+    margin-right: 10px;
+}
